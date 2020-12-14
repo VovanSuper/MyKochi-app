@@ -12,6 +12,7 @@
     "start": "ionic serve --consolelogs --source-map --debug -l",
     "start:ng": "ng serve",
     "build": "ionic capacitor build android --source-map --debug",
+    "build:ng": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

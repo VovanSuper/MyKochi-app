@@ -1,7 +1,8 @@
 <app-header [title]="title"></app-header>
 
 <ion-content fullscreen="true">
-  <ion-card>
+  <ion-progress-bar *ngIf="loading" type="indeterminate" color="danger"></ion-progress-bar>
+  <ion-card *ngIf="!loading">
     <ion-card-header>
       <ion-card-subtitle>{{post?.title?.rendered}}</ion-card-subtitle>
     </ion-card-header>

@@ -14,6 +14,8 @@ export class PostDetailsComponent implements OnInit {
   title = 'Post Details';
   post: PostModel & { img$: Observable<string>; } = null;
   logoUrl = '/assets/App-logo.png';
+  loaded = false;
+  loading = false;
 
   constructor(private actRoute: ActivatedRoute, private wpSvc: WordpressService) { }
 
@@ -21,7 +23,7 @@ export class PostDetailsComponent implements OnInit {
     this.actRoute.params.pipe(
       mergeMap(data => {
         const postId = +data['postId'];
-
+        this.loading = true;
         return this.getPost(postId);
       })
     ).subscribe(post => {
@@ -30,7 +32,9 @@ export class PostDetailsComponent implements OnInit {
         ...post,
         img$: this.wpSvc.getMediaForPost(post.id)
       };
-      this.title = this.title.concat(` ${this.post.title.rendered}`);
+      this.title = `${this.post.title.rendered}`;
+      this.loading = false;
+      this.loaded = true;
     });
   }
 
