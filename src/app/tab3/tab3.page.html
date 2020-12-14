@@ -1,17 +1,26 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header title="About Us"></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content fullscreen="true">
+  <app-content-container name="About Page">
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>{{title}}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="https://www.mykochionline.com/wp-content/uploads/2020/04/821983-455x184.jpg" alt="About us"
+          srcset="https://www.mykochionline.com/wp-content/uploads/2020/04/821983-850x344.jpg.webp 850w, https://www.mykochionline.com/wp-content/uploads/2020/04/821983-455x184.jpg.webp 455w, https://www.mykochionline.com/wp-content/uploads/2020/04/821983-768x311.jpg.webp 768w, https://www.mykochionline.com/wp-content/uploads/2020/04/821983-1536x621.jpg.webp 1536w, https://www.mykochionline.com/wp-content/uploads/2020/04/821983.jpg.webp 1956w" />
+        <div class="container text-block">
+          {{text}}
+        </div>
+        <div class="text-block">
+          Please send your feedback, comments, requests for technical support by email: info@mykochionline.com.
+        </div>
+        <p class="text-block">Last updated: 23-03-2020</p>
+      </ion-card-content>
+    </ion-card>
+
+  </app-content-container>
+
 </ion-content>

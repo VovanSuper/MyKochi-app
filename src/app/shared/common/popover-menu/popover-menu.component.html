@@ -1,0 +1,8 @@
+<ion-list>
+  
+  <ion-list-header>{{menuTitle}}</ion-list-header>
+  <ion-item *ngFor="let p of Pages; let i = index" (click)="goto(p)" [lines]="(i === PagesCount) ? 'none' : 'lines'" class="menu-item">
+    <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+    <ion-label>{{ p.title }}</ion-label>
+  </ion-item>
+</ion-list>

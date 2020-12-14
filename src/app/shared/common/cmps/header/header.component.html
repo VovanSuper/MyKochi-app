@@ -1,0 +1,21 @@
+<ion-grid>
+  <ion-row>
+    <ion-col size="12" offset-md="3" size-md="6">
+      <ion-header class="app-header" [translucent]="true">
+        <hr class="new1">
+        <ion-toolbar>
+          <!-- <ion-img class="menu-icon__img" [src]="'assets/App_logo.svg'" slot="start"></ion-img> -->
+          <ion-img class="menu-icon__img" [src]="logoUrl || 'assets/App-logo.png'" onerror="'src=/assets/App-logo.png'" slot="start" (click)="navRoot()"></ion-img>
+          <ion-title class="app-header__title">{{ title }}</ion-title>
+          <ion-buttons slot="end">
+            <!-- <ion-menu-button></ion-menu-button> -->
+            <ion-button (click)="popToggle($event)">
+              <ion-icon name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+    </ion-col>
+  </ion-row>
+</ion-grid>

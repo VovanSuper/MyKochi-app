@@ -1,17 +1,29 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header title="MyKochi | Recent Posts"></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content fullscreen="true">
+  <ion-progress-bar *ngIf="loading === true" type="indeterminate" color="danger"></ion-progress-bar>
+  <!-- <ion-card *ngFor="let item of getKeys(thumbs)">
+    <ion-card-header>
+      <ion-card-title>
+        {{thumbs.get(item).title}}
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div [innerHTML]="thumbs.get(item).content"></div>
+    </ion-card-content>
+  </ion-card> -->
+  <ion-card *ngFor="let item of items" (click)="gotoDetails(item)">
+    <img [src]="item.img$ | async" alt="{{item.title}}" />
+    <ion-card-header>
+      <ion-card-title>
+        {{item.title.rendered}}
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div [innerHTML]="item.excerpt.rendered"></div>
+    </ion-card-content>
+  </ion-card>
+  <ion-button *ngIf="loaded === true" (click)="next()">More posts</ion-button>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
 </ion-content>

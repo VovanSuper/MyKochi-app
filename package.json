@@ -1,11 +1,16 @@
 {
-  "name": "MyKochi-app",
+  "name": "mykochi-app",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "description": "An App for mykochi online ",
+  "author": {
+    "name": "Vladimir Ovsyukov",
+    "email": "vovansuper@mail.ru"
+  },
+  "homepage": "https://www.mykochionline.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ionic serve --consolelogs --source-map --debug -l",
+    "start:ng": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -36,6 +41,7 @@
     "@angular/language-service": "~10.0.0",
     "@capacitor/cli": "2.4.4",
     "@ionic/angular-toolkit": "^2.3.0",
+    "@ionic/lab": "3.2.10",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -51,6 +57,5 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
-  },
-  "description": "An Ionic project"
+  }
 }

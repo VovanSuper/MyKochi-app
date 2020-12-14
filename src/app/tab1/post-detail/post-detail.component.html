@@ -1,0 +1,16 @@
+<app-header [title]="title"></app-header>
+
+<ion-content fullscreen="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>{{post?.title?.rendered}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="post?.img$ | async" alt="Post Details" />
+
+      <div class="container">
+        {{post?.content?.rendered}}
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,242 @@
+@use './variables.scss';
+@import './elements.mixins';
+
+body {
+  font-family: var(--ion-font-family);
+  --font-family: var(--ion-font-family);
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:0.45px;
+  text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+app-overview {
+
+  .big {
+    font-size: 28px;
+    font-family: lato;
+    color: #004d4d;
+    font-weight: 700;
+  }
+
+}
+
+app-tests,
+app-overview,
+app-syllabus,
+app-about-modal,
+app-imprint-modal,
+app-data-privacy-modal
+{
+  .container {
+    padding: 1rem !important;
+  }
+}
+
+.app-header { 
+  font-family: 'Roboto', sans-serif;
+  .app-header__title {
+
+    font-size: 1.5rem;
+    text-align: center;
+    font-stretch: condensed;
+    color: var(--header-color);
+  }
+  
+  .menu-icon__img {
+    --height: 100px;
+    height: 30px;
+    margin: 10px;
+    border-right: 1px solid #ccc;
+    width: 56px;
+  }
+  
+}
+
+.new1 {
+  border-top: 5px solid #21505C;
+  padding: 0;
+  margin: 0;
+}
+
+.app-header__title {
+  @include __getPageTitle;
+}
+
+accord-simple-accordion-item {
+  header.accord-item__header {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .app-header {
+    .app-header__title {
+      font-size: 1.2rem;
+    }
+    
+  }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 850px) {
+  
+  ion-popover {
+    .popover-content {
+      left: 25rem !important;    
+    }
+  }
+
+}
+
+@media  screen and (min-width: 851px) {
+  
+  ion-popover {
+    .popover-content {
+      left: 32rem !important;    
+    }
+  }
+
+}
+
+@media  screen and (min-width: 1024px) {
+  
+  ion-popover {
+    .popover-content {
+      left: 35rem !important;    
+    }
+  }
+
+}
+
+@media  screen and (min-width: 1120px) {
+  
+  ion-popover {
+    .popover-content {
+      left: 37rem !important;    
+    }
+  }
+
+}
+
+@media  screen and (min-width: 1220px) {
+  
+  ion-popover {
+    .popover-content {
+      left: 45rem !important;    
+    }
+  }
+
+}
+
+@media  screen and (min-width: 1420px) {
+  
+  ion-popover {
+    .popover-content {
+      left: 64rem !important;    
+    }
+  }
+
+}
+
+@media  screen and (min-width: 1920px) {
+  
+  ion-popover {
+    .popover-content {
+      left: 74rem !important;    
+    }
+  }
+
+}
+
+@media  screen and (min-width: 2160px) {
+  
+  ion-popover {
+    .popover-content {
+      left: 80rem !important;    
+    }
+  }
+
+}
+
+// .app-menu__popover {
+//   .popover-content {
+//     position: absolute;
+//     top: 1rem;
+//     right: 1rem;
+//   }
+// }
+
+
+// app-tabs {
+//   ion-tab-bar {
+//     ion-tab-button {
+//       max-width: 10rem;
+//       max-height: 2.5rem;
+//       margin: 10px;
+//       border-top-left-radius:  .5rem;
+//       border-top-right-radius: .5rem;
+//       --color: white;
+//       --width: 1rem;
+//       --background: #a0bbc5;
+
+//       .button-native {
+//         color: white !important;
+//         --color: white !important;
+//       }
+//       .button-inner {
+//         --color: white !important;
+//         color: white !important;
+//       }
+
+//       &.tab-selected {
+//         --background: #63657a;
+//         --color: var(--ion-color-success-contrast);
+
+        
+//         .button-native {
+//           color: var(--ion-color-success-contrast);
+//           --color: white !important;
+//         }
+//         .button-inner {
+//           --color: var(--ion-color-success-contrast);
+//           color: white !important;
+//         }
+        
+
+//         &:after {
+//           content: '';
+//           position: absolute;
+//           top: 2.2rem;
+//           width: 0;
+//           height: 0;
+//           border-left: 5px solid transparent;
+//           border-right: 5px solid transparent;
+//           border-bottom: 0.8rem solid white;
+//         }
+//       }
+//     }
+//   }
+// }
+
+ion-title.title-large {
+  --color: #fff;
+}
+
+app-header {
+  --color: #fff;
+  --background-color: #005dbc;
+}
+
+ion-tab-bar {
+  --background: var(--footer-color) !important;
+}
+
+.text-block {
+  margin: 1rem;
+}

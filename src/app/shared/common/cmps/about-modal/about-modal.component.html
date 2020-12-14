@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="close()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-content-container name="About Page">
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>{{title}}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <img src="https://www.mykochionline.com/wp-content/uploads/2020/04/821983-455x184.jpg.webp" alt="About us"
+          srcset="https://www.mykochionline.com/wp-content/uploads/2020/04/821983-850x344.jpg.webp 850w, https://www.mykochionline.com/wp-content/uploads/2020/04/821983-455x184.jpg.webp 455w, https://www.mykochionline.com/wp-content/uploads/2020/04/821983-768x311.jpg.webp 768w, https://www.mykochionline.com/wp-content/uploads/2020/04/821983-1536x621.jpg.webp 1536w, https://www.mykochionline.com/wp-content/uploads/2020/04/821983.jpg.webp 1956w" />
+        <div class="container">
+          {{text}}
+        </div>
+        <div class="text-block">
+          Please send your feedback, comments, requests for technical support by email: info@mykochionline.com. Last
+          updated: 23-03-2020
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+  </app-content-container>
+
+</ion-content>
