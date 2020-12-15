@@ -16,14 +16,6 @@
       ]
     }
   },
-  "server": {
-    "iosScheme": "ionic",
-    "androidScheme": "http",
-    "allowNavigation": [
-      "*.mykochionline.com",
-      "*.mykochionline.com/wp-json/wp/v2"
-    ]
-  },
   "android": {
     "webContentsDebuggingEnabled": true
   },
