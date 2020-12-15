@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.mykochionline.apptester",
   "appName": "MyKochi-app",
   "bundledWebRuntime": false,
   "npmClient": "npm",
@@ -7,7 +7,25 @@
   "plugins": {
     "SplashScreen": {
       "launchShowDuration": 0
+    },
+    "PushNotifications": {
+      "presentationOptions": [
+        "badge",
+        "sound",
+        "alert"
+      ]
     }
+  },
+  "server": {
+    "iosScheme": "ionic",
+    "androidScheme": "http",
+    "allowNavigation": [
+      "*.mykochionline.com",
+      "*.mykochionline.com/wp-json/wp/v2"
+    ]
+  },
+  "android": {
+    "webContentsDebuggingEnabled": true
   },
   "cordova": {}
 }

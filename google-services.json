@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "52474856647",
+    "firebase_url": "https://test-proj1-vovan.firebaseio.com",
+    "project_id": "test-proj1-vovan",
+    "storage_bucket": "test-proj1-vovan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52474856647:android:a12578d5f1a4754b23eae2",
+        "android_client_info": {
+          "package_name": "com.mykochionline.apptester"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52474856647-5a67qilgkktl76fmherhamrk8prv2o5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKA07O1zXXMOV-S4zqNfgSMWnlwqTts2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52474856647-5a67qilgkktl76fmherhamrk8prv2o5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
