@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+
+const sensor = 'testfcf5c42aff80';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +10,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fbTestApp';
+
+  constructor() {
+    // this.getData();
+  }
+
+
+
+
+
+
 }

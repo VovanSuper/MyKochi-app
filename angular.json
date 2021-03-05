@@ -24,7 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "node_modules/@taiga-ui/core/styles/taiga-ui-global.less",
+              "node_modules/@taiga-ui/core/styles/taiga-ui-theme.less"
             ],
             "scripts": []
           },
@@ -118,6 +120,11 @@
           }
         }
       }
+    }
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "scss"
     }
   },
   "defaultProject": "fbTestApp"

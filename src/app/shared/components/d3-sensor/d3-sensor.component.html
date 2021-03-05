@@ -1,0 +1,14 @@
+<div class="tui-row tui-space_top-3">
+  <div class="tui-col_8 tui-col-offset_1">
+    <tui-calendar-range [items]="calItems" (rangeChange)="getRange($event)"></tui-calendar-range>
+    <div class="tui-col_2 tui-col-offset_1">
+      <button tuiButton class="tui-space_right-3 tui-space_bottom-3" (click)="startGetSensorData()">{{sensorBtnTitle}}</button>
+    </div>
+  </div>
+</div>
+
+<div class="tui-row tui-space_top-3 d3-chart">
+  <div class="tui-col-10 tui-col-offset_1">
+    <div id="chart"></div>
+  </div>
+</div>

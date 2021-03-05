@@ -1,0 +1,12 @@
+.tui-container {
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+  overflow: auto;
+
+  .axes {
+    min-height: 300px;
+    min-width: 90%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+<div class="tui-container">
+  <div class="tui-row">
+    <div class="tui-col_12 ">
+      <tui-tabs [(activeItemIndex)]="activeItemIndex">
+        <button tuiTab (click)="onTabClick(0)">Tui-bar-chart based Chart</button>
+        <button tuiTab (click)="onTabClick(1)">D3 / C3 based Chart</button>
+      </tui-tabs>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

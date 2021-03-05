@@ -1,0 +1,24 @@
+<div class="wrapper" tuiMode="onDark">
+  <h1 class="tui-text_h3 title" >Sensor Tracker</h1>
+  <div class="divider"></div>
+  <div class="auth-container" *ngIf="auth.user | async as user; else showLogin">
+    <h3>Hello, &nbsp; {{ user.email }}</h3>
+    <button tuiIconButton type="button" class="tui-space_right-3 tui-space_left-3" (click)="logOut()">
+      <span class="material-icons">
+        logout
+      </span>
+    </button>
+  </div>
+  <ng-template #showLogin>
+    <!-- <h3 class="tui-text_h6">Please login</h3> -->
+    <button tuiIconButton type="button" class="tui-space_right-3 tui-space_left-3"  (click)="logIn()">
+      <span class="material-icons">
+        login
+      </span>
+    </button>
+  </ng-template>
+</div>
+
+<!-- <ng-template #icon>
+  <tui-avatar size="xs" [rounded]="true" [avatarUrl]="avatar"></tui-avatar>
+</ng-template> -->

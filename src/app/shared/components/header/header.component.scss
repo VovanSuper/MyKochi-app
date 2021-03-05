@@ -1,0 +1,38 @@
+// @import "taiga-ui-local";
+
+:host {
+  position: relative;
+  display: block;
+  margin-bottom: 1rem;
+  background: rgba(53, 5, 97, 0.45);
+}
+
+.wrapper {
+  // .inset-border(bottom, light);
+  display: flex;
+  padding: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.divider {
+  flex: 1;
+}
+
+.content {
+  padding: 32px;
+}
+
+.title {
+  min-width: 250px;
+  margin: 0;
+  color: #b00;
+  text-shadow: 2px 2px 2px #b1c;
+  pointer-events: none;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: row;
+}
